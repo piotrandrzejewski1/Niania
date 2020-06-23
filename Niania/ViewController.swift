@@ -40,6 +40,8 @@ extension ViewController {
             AVAudioSession.sharedInstance().requestRecordPermission { granted in
                 onResult?(granted)
             }
+        @unknown default:
+            onResult?(false)
         }
     }
     
