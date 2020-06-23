@@ -29,7 +29,10 @@ class ViewController: UIViewController {
             }
         }
     }
+}
 
+extension ViewController {
+    
     private func requestMicPermission(onResult: ((Bool) -> Void)?) {
         let permission = AVAudioSession.sharedInstance().recordPermission
     
@@ -42,6 +45,8 @@ class ViewController: UIViewController {
             AVAudioSession.sharedInstance().requestRecordPermission { granted in
                 onResult?(granted)
             }
+        @unknown default:
+            onResult?(false)
         }
     }
 }
