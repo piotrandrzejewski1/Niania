@@ -13,6 +13,7 @@
 		09DE33B2249D583E00A3F0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B0249D583E00A3F0A7 /* Main.storyboard */; };
 		09DE33B4249D584000A3F0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B3249D584000A3F0A7 /* Assets.xcassets */; };
 		09DE33B7249D584000A3F0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B5249D584000A3F0A7 /* LaunchScreen.storyboard */; };
+		09DE33BF24A297A000A3F0A7 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33BE24A297A000A3F0A7 /* AudioService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		09DE33B3249D584000A3F0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09DE33B6249D584000A3F0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09DE33B8249D584000A3F0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DE33BE24A297A000A3F0A7 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		09DE33A9249D583E00A3F0A7 /* Niania */ = {
 			isa = PBXGroup;
 			children = (
+				09DE33BE24A297A000A3F0A7 /* AudioService.swift */,
 				09DE33AA249D583E00A3F0A7 /* AppDelegate.swift */,
 				09DE33AC249D583E00A3F0A7 /* SceneDelegate.swift */,
 				09DE33AE249D583E00A3F0A7 /* ViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DE33BF24A297A000A3F0A7 /* AudioService.swift in Sources */,
 				09DE33AF249D583E00A3F0A7 /* ViewController.swift in Sources */,
 				09DE33AB249D583E00A3F0A7 /* AppDelegate.swift in Sources */,
 				09DE33AD249D583E00A3F0A7 /* SceneDelegate.swift in Sources */,

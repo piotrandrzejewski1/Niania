@@ -10,20 +10,31 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var volumeLabel: UILabel!
     @IBOutlet weak var progressView: UIView!
+    private var audioService: AudioService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         requestMicPermission {[weak self] granted in
             if (granted) {
-                
+                self?.audioService = AudioService()
             }
             else {
                 self?.showPermissionDeniedAlert()
             }
         }
+    }
+    
+    @IBAction func buttonClick() {
+        guard let audioService = audioService else {
+            return
+        }
+        
+        audioService.update()
+        volumeLabel?.text = "\(audioService.getDecibels())dB"
     }
 }
 

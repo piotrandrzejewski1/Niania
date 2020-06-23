@@ -29,6 +29,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkf-Oz-wTf">
+                                <rect key="frame" x="157" y="792" width="100" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3fA-Ot-yh5"/>
+                                    <constraint firstAttribute="width" constant="100" id="Wdg-wj-wUZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4o-ym-fRE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -37,7 +49,9 @@
                             <constraint firstItem="jKE-po-i2Z" firstAttribute="top" secondItem="ug6-9q-mUc" secondAttribute="top" id="B93-5G-z8b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ug6-9q-mUc" secondAttribute="trailing" constant="40" id="Tzh-df-T2d"/>
                             <constraint firstItem="ug6-9q-mUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="UQa-RJ-BU1"/>
+                            <constraint firstItem="Fkf-Oz-wTf" firstAttribute="top" secondItem="ug6-9q-mUc" secondAttribute="bottom" constant="10" id="Zg7-Lz-4i2"/>
                             <constraint firstItem="ug6-9q-mUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ldD-Wy-EbO"/>
+                            <constraint firstItem="Fkf-Oz-wTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJV-Pq-FYW"/>
                             <constraint firstItem="jKE-po-i2Z" firstAttribute="leading" secondItem="ug6-9q-mUc" secondAttribute="leading" id="u2Y-I2-Vcj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ug6-9q-mUc" secondAttribute="bottom" constant="80" id="uyp-4X-7xD"/>
                             <constraint firstItem="jKE-po-i2Z" firstAttribute="bottom" secondItem="ug6-9q-mUc" secondAttribute="bottom" id="wXN-nn-zJN"/>
@@ -47,6 +61,7 @@
                     </view>
                     <connections>
                         <outlet property="progressView" destination="jKE-po-i2Z" id="lQz-b4-aS2"/>
+                        <outlet property="volumeLabel" destination="qSe-Zy-eWD" id="uHn-FH-zbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
