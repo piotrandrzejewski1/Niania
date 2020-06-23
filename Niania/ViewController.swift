@@ -21,15 +21,13 @@ class ViewController: UIViewController {
                 
             }
             else {
-                let alert = UIAlertController(title: "No mic permission", message: "Please enable Mic permiision in app settings", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
-                DispatchQueue.main.async {
-                    self?.present(alert, animated: true, completion: nil)
-                }
+                self?.showPermissionDeniedAlert()
             }
         }
     }
+}
 
+extension ViewController {
     private func requestMicPermission(onResult: ((Bool) -> Void)?) {
         let permission = AVAudioSession.sharedInstance().recordPermission
     
@@ -44,5 +42,14 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    private func showPermissionDeniedAlert() {
+        let alert = UIAlertController(title: "No mic permission", message: "Please enable Mic permiision in app settings", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }
+
 
