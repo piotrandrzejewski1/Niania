@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         requestMicPermission {[weak self] granted in
             if (granted) {
                 self?.audioService = AudioService()
+                self?.audioService?.start()
             }
             else {
                 self?.showPermissionDeniedAlert()

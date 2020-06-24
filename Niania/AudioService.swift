@@ -60,7 +60,7 @@ class AudioService: NSObject, AVAudioRecorderDelegate {
 
     func getDecibels() -> Float {
         if let recorder = recorder {
-            return recorder.averagePower(forChannel: 0)
+            return recorder.averagePower(forChannel: 0) + 120
         }
         return 0
     }

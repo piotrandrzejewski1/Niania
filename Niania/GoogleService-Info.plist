@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>332677094883-4nstda6aa6vkhssm4qbmbsophdn64hsc.apps.googleusercontent.com</string>
+	<string>332677094883-hftgo5o2va9ks0vs5qn0pdg04knkjhk5.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.332677094883-4nstda6aa6vkhssm4qbmbsophdn64hsc</string>
+	<string>com.googleusercontent.apps.332677094883-hftgo5o2va9ks0vs5qn0pdg04knkjhk5</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCL5Mt4TYssRB8b3Y-IGJ-LhxlzoWgrJMI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.pandrzejewski.niania</string>
+	<string>com.piotrandrzejewski.niania.recorder</string>
 	<key>PROJECT_ID</key>
 	<string>niania-e33cb</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:332677094883:ios:59a40eca270439a8ea14d6</string>
+	<string>1:332677094883:ios:cf324c87547c0b11ea14d6</string>
 	<key>DATABASE_URL</key>
 	<string>https://niania-e33cb.firebaseio.com</string>
 </dict>
