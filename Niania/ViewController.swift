@@ -8,18 +8,22 @@
 
 import UIKit
 import AVFoundation
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var volumeLabel: UILabel!
     @IBOutlet weak var progressView: UIView!
     private var audioService: AudioService?
-    
+    private var database: DatabaseReference?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
         requestMicPermission {[weak self] granted in
             if (granted) {
+                
+                self?.database = Database.database().reference()
                 self?.audioService = AudioService()
                 self?.audioService?.start()
             }
@@ -35,7 +39,14 @@ class ViewController: UIViewController {
         }
         
         audioService.update()
-        volumeLabel?.text = "\(audioService.getDecibels())dB"
+        let decibels = audioService.getDecibels()
+        volumeLabel?.text = "\(decibels)dB"
+        
+        guard let database = database else {
+            return
+        }
+        
+        database.child("volume").setValue(["\(Date())" : decibels])
     }
 }
 
