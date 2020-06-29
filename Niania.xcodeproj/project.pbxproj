@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		09DE33AB249D583E00A3F0A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33AA249D583E00A3F0A7 /* AppDelegate.swift */; };
 		09DE33AD249D583E00A3F0A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33AC249D583E00A3F0A7 /* SceneDelegate.swift */; };
-		09DE33AF249D583E00A3F0A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33AE249D583E00A3F0A7 /* ViewController.swift */; };
+		09DE33AF249D583E00A3F0A7 /* HearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33AE249D583E00A3F0A7 /* HearViewController.swift */; };
 		09DE33B2249D583E00A3F0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B0249D583E00A3F0A7 /* Main.storyboard */; };
 		09DE33B4249D584000A3F0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B3249D584000A3F0A7 /* Assets.xcassets */; };
 		09DE33B7249D584000A3F0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33B5249D584000A3F0A7 /* LaunchScreen.storyboard */; };
 		09DE33BF24A297A000A3F0A7 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE33BE24A297A000A3F0A7 /* AudioService.swift */; };
 		09DE33C124A2A9E300A3F0A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09DE33C024A2A9E200A3F0A7 /* GoogleService-Info.plist */; };
+		862692BA24A4C94800C0FFFE /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862692B924A4C94800C0FFFE /* PlayViewController.swift */; };
 		F865A625EA87AE1A2F0B3873 /* Pods_Niania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA4F514DC7AAC9B13E63D9 /* Pods_Niania.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +23,7 @@
 		09DE33A7249D583E00A3F0A7 /* Niania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Niania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DE33AA249D583E00A3F0A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DE33AC249D583E00A3F0A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09DE33AE249D583E00A3F0A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09DE33AE249D583E00A3F0A7 /* HearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearViewController.swift; sourceTree = "<group>"; };
 		09DE33B1249D583E00A3F0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09DE33B3249D584000A3F0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09DE33B6249D584000A3F0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		09DE33C024A2A9E200A3F0A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C07EF5E64627AA9843C0215 /* Pods-Niania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niania.debug.xcconfig"; path = "Target Support Files/Pods-Niania/Pods-Niania.debug.xcconfig"; sourceTree = "<group>"; };
 		3484862AB5F54D2818B004F5 /* Pods-Niania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niania.release.xcconfig"; path = "Target Support Files/Pods-Niania/Pods-Niania.release.xcconfig"; sourceTree = "<group>"; };
+		862692B924A4C94800C0FFFE /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		E1EA4F514DC7AAC9B13E63D9 /* Pods_Niania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Niania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,12 +81,13 @@
 				09DE33BE24A297A000A3F0A7 /* AudioService.swift */,
 				09DE33AA249D583E00A3F0A7 /* AppDelegate.swift */,
 				09DE33AC249D583E00A3F0A7 /* SceneDelegate.swift */,
-				09DE33AE249D583E00A3F0A7 /* ViewController.swift */,
+				09DE33AE249D583E00A3F0A7 /* HearViewController.swift */,
 				09DE33B0249D583E00A3F0A7 /* Main.storyboard */,
 				09DE33C024A2A9E200A3F0A7 /* GoogleService-Info.plist */,
 				09DE33B3249D584000A3F0A7 /* Assets.xcassets */,
 				09DE33B5249D584000A3F0A7 /* LaunchScreen.storyboard */,
 				09DE33B8249D584000A3F0A7 /* Info.plist */,
+				862692B924A4C94800C0FFFE /* PlayViewController.swift */,
 			);
 			path = Niania;
 			sourceTree = "<group>";
@@ -214,7 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DE33BF24A297A000A3F0A7 /* AudioService.swift in Sources */,
-				09DE33AF249D583E00A3F0A7 /* ViewController.swift in Sources */,
+				862692BA24A4C94800C0FFFE /* PlayViewController.swift in Sources */,
+				09DE33AF249D583E00A3F0A7 /* HearViewController.swift in Sources */,
 				09DE33AB249D583E00A3F0A7 /* AppDelegate.swift in Sources */,
 				09DE33AD249D583E00A3F0A7 /* SceneDelegate.swift in Sources */,
 			);

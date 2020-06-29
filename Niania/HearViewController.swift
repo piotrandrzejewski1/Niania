@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HearViewController.swift
 //  Niania
 //
 //  Created by Ja on 19/06/2020.
@@ -10,13 +10,15 @@ import UIKit
 import AVFoundation
 import FirebaseDatabase
 
-class ViewController: UIViewController {
+class HearViewController: UIViewController {
     
     @IBOutlet weak var volumeLabel: UILabel!
-    @IBOutlet weak var progressView: UIView!
+    @IBOutlet weak var levelBackgroundView: UIView!
+    @IBOutlet weak var levelViewHeightConstraint: NSLayoutConstraint!
     private var audioService: AudioService?
     private var database: DatabaseReference?
-
+    private let maxLevel: Int = 120
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -26,31 +28,41 @@ class ViewController: UIViewController {
                 self?.database = Database.database().reference()
                 self?.audioService = AudioService()
                 self?.audioService?.start()
+                
+                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) {[weak self] timer in
+                    self?.checkDecibels()
+                }
             }
             else {
                 self?.showPermissionDeniedAlert()
             }
         }
     }
-    
-    @IBAction func buttonClick() {
+}
+
+extension HearViewController {
+    private func checkDecibels() {
         guard let audioService = audioService else {
             return
         }
-        
+               
         audioService.update()
         let decibels = audioService.getDecibels()
-        volumeLabel?.text = "\(decibels)dB"
+        volumeLabel?.text = "\(Int(decibels))dB"
+        let levelHeight = Float(levelBackgroundView.bounds.height) * decibels / 120
+        
+        UIView.animate(withDuration: 0.2) {[weak self] in
+            self?.levelViewHeightConstraint.constant = CGFloat(levelHeight)
+            self?.view.layoutIfNeeded()
+        }
         
         guard let database = database else {
             return
         }
-        
-        database.child("volume").setValue(["\(Date())" : decibels])
+               
+        database.child("volume").setValue(decibels)
     }
-}
-
-extension ViewController {
+        
     private func requestMicPermission(onResult: ((Bool) -> Void)?) {
         let permission = AVAudioSession.sharedInstance().recordPermission
     
